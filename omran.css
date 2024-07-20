@@ -28,7 +28,6 @@ body {
 .title {
     text-align: center;
     margin-bottom: 20px;
-    /* إضافة تباعد للتأكد من المسافة المناسبة */
 }
 
 button,
@@ -115,7 +114,6 @@ button,
     background-color: #f1f1f1;
 }
 
-/* إزالة القاعدة العامة إذا كنت تستخدم قواعد خاصة */
 button {
     margin-left: 5px;
     padding: 8px 12px;
@@ -139,7 +137,6 @@ button {
     color: #fff;
 }
 
-/* أنماط المودال */
 .modal {
     display: none;
     position: fixed;
@@ -177,7 +174,6 @@ button {
     cursor: pointer;
 }
 
-/* أنماط المودال لإضافة جهة اتصال */
 #addContactModal .modal-content {
     max-width: 400px;
 }
