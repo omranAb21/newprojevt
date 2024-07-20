@@ -12,15 +12,7 @@
 
   <h1 class="title">הוסיף אנשי קשר</h1>
 
-  <div class="container">
-    <div class="controls">
-      <button class="delete-all-button" onclick="deleteAllContacts()">מחק הכל</button>
-      <button class="add-contact-button" onclick="openAddContactModal()">הוסף איש קשר</button>
-      <div class="search-container">
-        <input type="text" id="search" placeholder="חפש איש קשר...">
-        <button class="search-button" onclick="searchContacts()">חפש</button>
-      </div>
-    </div>
+  
 
     <table class="list" id="contactList">
       <thead>
@@ -37,11 +29,7 @@
               <span class="contact-name">עמראן אבוליל</span>
             </div>
           </td>
-          <td>
-            <button class="info-button" onclick="showInfo('עמראן אבוליל', 20, '0547712912', 'עין מאהל')">פרטים</button>
-            <button class="edit-button">עריכה</button>
-            <button class="delete-button" onclick="deleteContact(this)">מחק</button>
-          </td>
+         
         </tr>
         <tr class="contact-item">
           <td>
@@ -50,11 +38,7 @@
               <span class="contact-name">נירא אבו סלאח</span>
             </div>
           </td>
-          <td>
-            <button class="info-button" onclick="showInfo('נירא אבו סלאח', 19, '0524674317', 'מגאר')">פרטים</button>
-            <button class="edit-button">עריכה</button>
-            <button class="delete-button" onclick="deleteContact(this)">מחק</button>
-          </td>
+         
         </tr>
       </tbody>
     </table>
@@ -62,7 +46,6 @@
 
   <div id="infoModal" class="modal">
     <div class="modal-content">
-      <span class="close-button" onclick="closeModal()">&times;</span>
       <h2>מידע על איש הקשר</h2>
       <p id="contactName">שם: </p>
       <p id="contactAge">גיל: </p>
@@ -71,25 +54,10 @@
     </div>
   </div>
 
-  <div id="addContactModal" class="modal">
-    <div class="modal-content">
-      <span class="close-button" onclick="closeAddContactModal()">&times;</span>
-      <h2>הוסף איש קשר</h2>
-      <form id="addContactForm">
-        <label for="contactNameInput">שם:</label>
-        <input type="text" id="contactNameInput" required>
-        <label for="contactAgeInput">גיל:</label>
-        <input type="number" id="contactAgeInput" required>
-        <label for="contactPhoneInput">טלפון:</label>
-        <input type="text" id="contactPhoneInput" required>
-        <label for="contactAddressInput">כתובת:</label>
-        <input type="text" id="contactAddressInput" required>
-        <button type="submit">הוסף</button>
       </form>
     </div>
   </div>
 
-  <script src="omran.js"></script>
 </body>
 
 </html>
